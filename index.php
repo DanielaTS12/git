@@ -1,5 +1,6 @@
 <?php
-// Verifica si el formulario de inicio de sesión fue enviado
+// Verifica si el formulario de inicio de sesión fue enviadoooo
+//Modificacion para comprobar que este funcionando git
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtén los datos del formulario
     $usuario = $_POST["usuario"];
@@ -17,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         // Credenciales inválidas
-        $error = "Usuario o contraseña incorrectos";
+        $error = "El usuario o contraseña esta incorrecto";
     }
 }
 ?>
@@ -25,17 +26,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inicie sesion </title>
+    <title>Iniciar sesion </title>
 </head>
 <body>
-    <h2>Iniciar sesión</h2>
+    <h2>Inicie  sesión</h2>
     <?php if(isset($error)) { ?>
         <p><?php echo $error; ?></p>
     <?php } ?>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <label for="usuario">Usuariooo:</label>
+        <label for="usuario">Escriba su nombre:</label>
         <input type="text" id="usuario" name="usuario" required><br><br>
-        <label for="contrasena">Contraseñaaa:</label>
+        <label for="contrasena"> Esciba su contraseñaaa:</label>
         <input type="password" id="contrasena" name="contrasena" required><br><br>
         <input type="submit" value="Iniciar sesión">
     </form>
