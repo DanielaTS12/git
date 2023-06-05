@@ -29,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Iniciar sesion </title>
 </head>
 <body>
+    <p>Karen Daniela Torres Samchez </p>
     <h2>Inicie  sesión</h2>
     <?php if(isset($error)) { ?>
         <p><?php echo $error; ?></p>
