@@ -26,16 +26,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Iniciar sesion </title>
+    <title>LOGUEO </title>
 </head>
 <body>
-    <p>Karen Daniela Torres Samchez </p>
-    <h2>Inicie  sesión</h2>
+    <p>Daniela Torres  </p>
+    <h2>Iniciar sesion </h2>
     <?php if(isset($error)) { ?>
         <p><?php echo $error; ?></p>
     <?php } ?>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <label for="usuario">Escriba su nombre:</label>
+        <label for="usuario">Nombre del usuario:</label>
         <input type="text" id="usuario" name="usuario" required><br><br>
         <label for="contrasena"> Esciba su contraseñaaa:</label>
         <input type="password" id="contrasena" name="contrasena" required><br><br>
